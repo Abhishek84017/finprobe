@@ -7,7 +7,7 @@ from parse_response import parse_market_data
 WS_URL = "wss://smartapisocket.angelone.in/smart-stream"
 
 API_KEY = "YOUR_API_KEY"
-FEED_TOKEN = "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6IlAxNzUyNTQiLCJpYXQiOjE3NjczNjgzNTUsImV4cCI6MTc2NzQ1NDc1NX0.lN4OYZH3__Y3578VituZNRu6VUmYVnSil2IPS4BVXxNhQNOSRFkdQ9rJ5hjtcyS51rcBSkd080wxPh9L9TRwhw"
+FEED_TOKEN = "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6IlAxNzUyNTQiLCJpYXQiOjE3Njc1ODk5NDMsImV4cCI6MTc2NzY3NjM0M30.VPf8GD2Zi69sMrrL2yFwuw8FitJFrAGniHJazwcxu82eWXSekZ36XJjJM_p1TtvSUHZ2KXYmaXaHJldgempWBA"
 
 SUBSCRIBE_MODE = 3  # 1=LTP, 2=QUOTE, 3=SNAPQUOTE
 
@@ -21,7 +21,13 @@ def on_open(ws):
             "tokenList": [
                 {
                     "exchangeType": 1,          # NSE_CM
-                    "tokens": ["17939", "11536"]
+                    "tokens": [
+                        "17939",
+                        "17851",
+                        "17971",
+                        "18035",
+                        "17801"
+                    ]
                 }
             ]
         }
